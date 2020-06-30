@@ -1,0 +1,52 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+body h1 {
+  font-family: 'Inconsolata', monospace;
+}
+
+body main h2 {
+  font-family: 'Inconsolata', monospace;
+}
+
+body main form {
+  font-family: 'Nunito', sans-serif;
+}
+
+body main form p {
+  font-weight: bold;
+}
+
+body main form .odd {
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+body main form .even {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+body main button {
+  padding: 15px 30px 15px 30px;
+  margin: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  border: none;
+}
+
+body main button:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=style.css.map */

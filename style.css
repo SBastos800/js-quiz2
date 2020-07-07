@@ -10,7 +10,7 @@ body h1 {
   font-family: 'Inconsolata', monospace;
 }
 
-body main h2 {
+body main h2, body main h3 {
   font-family: 'Inconsolata', monospace;
 }
 

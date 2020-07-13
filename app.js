@@ -1,5 +1,6 @@
 const correctAnswers = ['A', 'C', 'A', 'B', 'A', 'B', 'A', 'C', 'A', 'D'];
 const form = document.querySelector('form');
+const result = document.querySelector('span');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -14,7 +15,10 @@ form.addEventListener('submit', e => {
         }      
     });
     console.log(score);
+    result.textContent = score;
 });
+
+
 
 
 

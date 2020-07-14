@@ -14,8 +14,10 @@ form.addEventListener('submit', e => {
             score += 10;
         }      
     });
-    console.log(score);
-    result.textContent = score;
+    scrollTo(0,0);
+    // console.log(score);
+
+    result.textContent = `${score}`;
 });
 
 

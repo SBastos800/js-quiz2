@@ -12,11 +12,10 @@ form.addEventListener('submit', e => {
     selectedAnswers.forEach((answer, index) => {
         if (answer === correctAnswers[index]){
             score += 10;
-        }      
+        }  
     });
     scrollTo(0,0);
     // console.log(score);
-
     result.textContent = `${score}`;
 });
 

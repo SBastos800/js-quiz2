@@ -22,6 +22,17 @@ body main h3 {
   padding: 20px 0 20px 0;
 }
 
+body main #myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+body main #myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
 body main form {
   font-family: 'Nunito', sans-serif;
 }

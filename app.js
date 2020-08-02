@@ -23,12 +23,40 @@ form.addEventListener('submit', e => {
         if(output === score) {
             clearInterval(progressingBar);
         } else {
-            output ++
+            output ++;
         }
         
     }, 10);
-    
+
+      
+    function move() {
+        if (score === 0) {
+            score = 1;
+            var elem = document.getElementById("myBar");
+            // var width = 0;
+            var id = setInterval(frame, 0);
+            function frame() {
+            if (output === score) {
+                clearInterval(id);
+                // score = 0;
+            } else {
+                score++;
+                elem.style.score = score + "%";
+                elem.innerHTML = score + "%";
+            }
+            }
+        }
+    }
+
+    move(score);
+  
 });
+
+
+
+
+
+
 
 
 

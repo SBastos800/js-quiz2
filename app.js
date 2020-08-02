@@ -16,7 +16,18 @@ form.addEventListener('submit', e => {
     });
     scrollTo(0,0);
     // console.log(score);
-    result.textContent = `${score}`;
+    
+    let output = 0;
+    const progressingBar = setInterval(() => {
+        result.textContent = `${output}`;
+        if(output === score) {
+            clearInterval(progressingBar);
+        } else {
+            output ++
+        }
+        
+    }, 10);
+    
 });
 
 
